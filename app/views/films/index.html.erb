@@ -1,0 +1,18 @@
+<h1>Peliculas</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Url</th>
+    <th>Fecha de presentación</th>
+  </tr>
+  <% @films.each do |f| %>
+    <tr>
+      <td><%= f.name %></td>
+      <td><%= f.description %></td>
+      <td><%= f.url %></td>
+      <td><%= f.date %></td>
+    </tr>
+  <% end %>
+</table>

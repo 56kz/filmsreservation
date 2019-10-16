@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2019-10-15
+  identification: 1
+  name: MyString
+  email: MyString
+  cellphone: 1
+  film: one
+
+two:
+  day: 2019-10-15
+  identification: 1
+  name: MyString
+  email: MyString
+  cellphone: 1
+  film: two
