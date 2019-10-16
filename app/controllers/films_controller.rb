@@ -1,7 +1,11 @@
 class FilmsController < ApplicationController
 
   def index
-    @films = Film.all
+    @start_date = params[:start].try(:to_date) || 15.days.ago.to_date
+    @end_date = params[:end].try(:to_date) || Date.current
+    range = (@start_date..@end_date)
+
+    @films = Film.where(presentation: range).order(presentation: :desc)
   end
 
   def new
