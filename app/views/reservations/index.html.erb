@@ -1,0 +1,22 @@
+<h1>Reservas</h1>
+
+<table>
+  <tr>
+    <th>Día</th>
+    <th>Identificación</th>
+    <th>Nombre</th>
+    <th>Email</th>
+    <th>Celular</th>
+    <th>Id de la pelicula</th>
+  </tr>
+  <% @reservations.each do |r| %>
+    <tr>
+      <td><%= r.day %></td>
+      <td><%= r.identification %></td>
+      <td><%= r.name %></td>
+      <td><%= r.email %></td>
+      <td><%= r.cellphone %></td>
+      <td><%= r.film_id %></td>      
+    </tr>
+  <% end %>
+</table>
