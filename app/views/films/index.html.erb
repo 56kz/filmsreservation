@@ -1,6 +1,6 @@
 <h1>Peliculas</h1>
 
-<input type="text" id="rangepicker"/>
+<input type="text" id="rangepicker">
 
 <table>
   <tr>
@@ -25,6 +25,7 @@
  <%= hidden_field_tag :start %>
  <%= hidden_field_tag :end %>
 <% end %>
+
 <script>
   $("#rangepicker").daterangepicker({}, function(start, end, label){
     $("#start").val(start.format('YYYY-MM-DD'));
