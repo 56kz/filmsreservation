@@ -1,4 +1,4 @@
-class FilmsController < AppplicationController
+class FilmsController < ApplicationController
 
   def index
     @films = Film.all
@@ -19,6 +19,6 @@ class FilmsController < AppplicationController
 
   private
   def film_params
-
+    params.require(:film).permit(:name, :description, :url, :presentation)
   end
 end
